@@ -29,7 +29,4 @@ webos_component(2 0 0)
 
 # install ime/*.h files in /usr/include/ime
 MESSAGE (STATUS, "Installing json files in ${WEBOS_INSTALL_INCLUDEDIR}")
-install(DIRECTORY include/public/ime DESTINATION ${WEBOS_INSTALL_INCLUDEDIR} 
-        PATTERN "svn"         EXCLUDE 
-        PATTERN ".svn"        EXCLUDE
-)
+install(DIRECTORY include/public/ime DESTINATION ${WEBOS_INSTALL_INCLUDEDIR})
